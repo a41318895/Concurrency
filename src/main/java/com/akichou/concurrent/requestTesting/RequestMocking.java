@@ -1,4 +1,4 @@
-package com.akichou.concurrent.request;
+package com.akichou.concurrent.requestTesting;
 
 import com.akichou.concurrent.manager.LockManager;
 import lombok.RequiredArgsConstructor;
@@ -96,7 +96,7 @@ public class RequestMocking implements CommandLineRunner {
         log.info("{} requests successful, {} requests failed.", successRequestCounter.get(), failRequestCounter.get());
 
         log.info("Total spent time: {} ms", totalTimeSpent);
-        log.info("Average time spent per request: {} ms\n", (double) totalTimeSpent / (TOTAL_REQUEST_NUMBER * 2));
+        log.info("Average time spent per requestTesting: {} ms\n", (double) totalTimeSpent / (TOTAL_REQUEST_NUMBER * 2));
 
 
         // Check the status of locks for apply
